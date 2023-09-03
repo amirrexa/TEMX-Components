@@ -1,30 +1,37 @@
 export const cryptoData = [
   {
     value: "btc",
-    label: "Bitcoin بیتکوین",
+    en: "Bitcoin",
+    fa: "بیتکوین",
   },
   {
     value: "ltc",
-    label: "Litecoin لایتکوین",
+    en: "Litecoin",
+    fa: "لایت کوین",
   },
   {
     value: "eth",
-    label: "Ethereum اتریوم",
+    en: "Ethereum",
+    fa: "اتریوم",
   },
   {
     value: "arb",
-    label: "Arbitrum آربیتروم",
+    en: "Arbitrum",
+    fa: "آربیتروم",
   },
   {
     value: "doge",
-    label: "Dogecoin دوج کوین"
+    en: "Dogecoin",
+    fa: "دوج کوین",
   },
   {
     value: "usdt",
-    label: "USDT تتر",
+    en: "USDT",
+    fa: "تتر",
   },
   {
     value: "irt",
-    label: "IRT تومان"
+    en: "IRT",
+    fa: "تومان",
   }
 ];
