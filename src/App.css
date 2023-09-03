@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'YekanBakh';
+  src: url(./assets/fonts/YekanBakh-Regular.ttf);
+}
+
+* {
+  font-family: 'YekanBakh', 'Roboto';
+}
+
+main {
+  margin: 5% auto;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
