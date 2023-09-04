@@ -88,9 +88,14 @@
 
     //ANT Modification
     .ant-input-group-wrapper {
+      user-select: none;
       background-color: rgba(166, 255, 255, 0.301);
       padding: 3%;
       border-radius: 10px;
+    }
+
+    .ant-input-group-addon:nth-child(3) {
+      width: 10rem!important;
     }
   }
 }
