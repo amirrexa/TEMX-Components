@@ -31,38 +31,42 @@
     }
 
     button {
-        background: transparent;
-        border: none;
-        border-radius: 10px;
-        color: #4598fe;
-        cursor: pointer;
-        font-size: 24px;
-        font-weight: 500;
-        margin-right: auto;
-        padding: 12px;
-        width: 100%;
-        height: fit-content;
+      background: transparent;
+      border: none;
+      border-radius: 10px;
+      color: #4598fe;
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: 500;
+      margin-right: auto;
+      padding: 12px;
+      width: 100%;
+      height: fit-content;
 
-        &.active {
-          background: linear-gradient(67.65deg, #0066e2 32.63%, #1d82ff 70.87%);
-          color: white;
-        }
-
-        &.buy {
-          background: linear-gradient(91.95deg, #1fcb45 -14.4%, #1cdf2f 91.65%);
-          color: white;
-        }
-
-        &.sell {
-          background: linear-gradient(91.95deg, #fc2a2a -14.4%, #ff4646 91.65%);
-          color: white;
-        }
-
-        &.swap {
-          background: linear-gradient( 92.36deg, rgba(0, 81, 182, 0.7) -46.11%, rgba(0, 114, 254, 0.7) 92.47% );
-          opacity: 1;
-        }
+      &.active {
+        background: linear-gradient(67.65deg, #0066e2 32.63%, #1d82ff 70.87%);
+        color: white;
       }
+
+      &.buy {
+        background: linear-gradient(91.95deg, #1fcb45 -14.4%, #1cdf2f 91.65%);
+        color: white;
+      }
+
+      &.sell {
+        background: linear-gradient(91.95deg, #fc2a2a -14.4%, #ff4646 91.65%);
+        color: white;
+      }
+
+      &.swap {
+        background: linear-gradient(
+          92.36deg,
+          rgba(0, 81, 182, 0.7) -46.11%,
+          rgba(0, 114, 254, 0.7) 92.47%
+        );
+        opacity: 1;
+      }
+    }
 
     .input-row {
       margin-top: 5%;
@@ -75,6 +79,16 @@
       }
       input {
         direction: ltr;
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
       }
     }
 
@@ -82,20 +96,23 @@
       margin-top: 5%;
       color: white;
       &:hover {
-        color:white;
+        color: white;
       }
     }
 
     //ANT Modification
+    .ant-select {
+      width: 100%;
+    }
+
     .ant-input-group-wrapper {
-      user-select: none;
       background-color: rgba(166, 255, 255, 0.301);
-      padding: 3%;
       border-radius: 10px;
     }
 
     .ant-input-group-addon:nth-child(3) {
-      width: 10rem!important;
+      padding: 0!important;
+      width: 25% !important;
     }
   }
 }
